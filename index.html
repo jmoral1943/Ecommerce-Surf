@@ -1,20 +1,63 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="./lib/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Surf Shop</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery -->
+  <body>
+    <div class="content">
+      <div class="content__hero">
+    
+        <img class="mobile__homescreen" src="./lib/img/mobile-homescreen.jpeg" alt="Surfers">
+        <img class="desktop__homescreen" src="./lib/img/desktop-homescreen.jpeg" alt="surfing">
+        <img class="tablet__homescreen" src="./lib/img/sufer-car.jpeg" alt="Surfing car">
+        <img class="homescreen__leftArrow" src="./lib/img/left.png" alt="left-arrow">
+        <img class="homescreen__rightArrow" src="./lib/img/right.png" alt="right-arrow">
+        
+        <div class="homescreen__header">
+            <div id="homescreen__hamburger" class="homescreen__hamburgerIcon" onclick="openNav()">
+                &#9776;
+            </div>
+
+            <h2 class="mobile__title">Surf City</h2>
+        </div>
+
+        <div id="homescreen__header--mobile" class="homescreen__header--desktop">
+          <nav>
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./index.html">Home</a>
+            <a href="./product.html">Products</a>
+            <a href="./contact.html\">Contact Us</a>
+          </nav>
+        </div>
+       
+      </div>
+
+      <div class="main-content">
+        <div class="main-content__cards">
+          <img src="./lib/img/photoTwo.jpeg" alt="sales">
+          <a class="cards__button" href="./product.html"><p>New arrivals</p></a> 
+        </div>
+
+        <div class="main-content__cards">
+          <img src="./lib/img/photoThree.jpeg" alt="new arrivals">
+          <a class="cards__button--right" href="./product.html"><p>Sales</p></a> 
+        </div>
+
+        <div class="main-content__cards--bigger">
+          <img src="./lib/img/photoFour.jpeg" alt="SurfBoards">
+          <a class="cards__button--top" href="./product.html"><p>Apparel</p></a> 
+        </div>
+      </div>
+
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./lib/js/index.js"></script>
   </body>
 </html>
