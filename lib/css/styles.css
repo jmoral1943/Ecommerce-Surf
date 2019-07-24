@@ -177,8 +177,15 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  transition: 0.5s;
+  transition: 0.7s;
   overflow-x: hidden;
+}
+
+.homescreen__navbar--mobile {
+  opacity: 0;
+  transition: .5s .5s;
+  color: white;
+  font-size: 4em;
 }
 
 .homescreen__header--desktop nav {
@@ -190,7 +197,7 @@ html {
 }
 
 .homescreen__header--desktop a {
-  color: white;
+  text-decoration: none;
   font-size: 4em;
 }
 .closebtn {
@@ -200,7 +207,9 @@ html {
 }
 
 
-
+.mobile__title--desktop {
+  display: none;
+}
 
 
 
@@ -247,4 +256,38 @@ html {
     display: flex;
     justify-content: space-evenly;
   }
+
+  .homescreen__navbar--mobile {
+    opacity: unset;
+    transition: unset;
+    color: black;
+  }
+
+  .homescreen__header--desktop nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+  }
+
+  .homescreen__header--desktop a {
+    text-decoration: none;
+    font-size: 2em;
+  }
+  .closebtn,
+  .homescreen__hamburgerIcon,
+  .mobile__title {
+    display: none;
+  }
+
+  .mobile__title--desktop {
+    display: flex;
+  }
+
+
 }
