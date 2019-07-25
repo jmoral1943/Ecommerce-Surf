@@ -1,20 +1,59 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="./lib/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <title>Surf Shop</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery -->
+  <body>
+    <div class="content">
+      <div class="content__hero">
+    
+        <img class="mobile__homescreen" src="./lib/img/mobile-homescreen.jpeg" alt="Surfers">
+        <img class="tablet__homescreen" src="./lib/img/sufer-car.jpeg" alt="Surfing car">
+
+        <div class="carousel-container">
+          <img class="desktop__homescreen carousel" src="./lib/img/desktop-homescreen.jpeg" alt="surfing">
+          <img class="desktop__homescreen carousel" src="./lib/img/carousel-photoTwo.jpeg" alt="crystal-blue-surfing">
+          <img class="desktop__homescreen carousel" src="./lib/img/carousel-photoThree.jpeg" alt="crystal-blue-surfing">          
+        </div>
+
+        <img class="homescreen__leftArrow animated bounceInLeft" src="./lib/img/left.png" alt="left-arrow" onclick="">
+        <img class="homescreen__rightArrow animated bounceInRight" src="./lib/img/right.png" alt="right-arrow">
+        <h1 class="desktop__header animated bounceInDown">Surf Star</h1>
+        <div class="homescreen__header">
+            <div id="homescreen__hamburger" class="homescreen__hamburgerIcon" onclick="openNav()">
+                &#9776;
+            </div>
+
+            <h2 class="mobile__title">Surf City</h2>
+        </div>
+
+        <div id="homescreen__header--mobile" class="homescreen__header--desktop">
+          <nav>
+            <img class="homescreen__image animated bounceInLeft" src="./lib/img/surf-logo.png" alt="logo">
+            <div class="animated bounceInLeft">
+                <a href="javascript:;" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="./index.html" class="homescreen__navbar--mobile">Home</a>
+                <a href="./product.html" class="homescreen__navbar--mobile">Products</a>
+                <a href="./contact.html" class="homescreen__navbar--mobile">Contact Us</a>
+            </div>
+          </nav>
+        </div>
+       
+      </div>
+
+      <div class="main-content">
+        
+      </div>
+
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./lib/js/index.js"></script>
   </body>
 </html>
