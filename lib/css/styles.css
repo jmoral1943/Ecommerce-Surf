@@ -417,4 +417,27 @@ html {
     left: calc(50vw - 205px);
     font-size: 6em;
   }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #898d9c;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .footer__logo {
+    width: 10vw;
+  }
+
+  .footer__copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .fab {
+    font-size: 3em;
+    margin: 0 1em;
+  }
 }
