@@ -2,17 +2,22 @@
   .products {
     display: flex;
     width: 100vw;
+    padding-bottom: 4em;
+    padding-top: 2em;
   }
 
   .products__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10%;
+    padding-right: 2em;
   }
 
   .item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1em;
   }
 
   .item__card {
@@ -35,6 +40,11 @@
     width: 10vw;
   }
 
+  .item__descr {
+    color: white;
+    margin-top: 2em;
+  }
+
   .products__filters {
     width: 90vw;
     margin-left: 1.5em;
@@ -45,6 +55,8 @@
     color: white;
     font-size: 2em;
     text-align: center;
+    margin-top: .5em;
+    margin-bottom: 1.5em;
   }
 
   .checkbox {
