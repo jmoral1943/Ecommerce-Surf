@@ -1,8 +1,6 @@
 
 
 **The website must have the following pages:**
-
-    **Products Page:**  This page should allows the user to filter by product type and price
     **Contact Page:** There should be a form that has a place for users to enter their name, email, add a comment, and anything else that you feel would be helpful for your website.
 
 

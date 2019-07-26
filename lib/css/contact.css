@@ -1,0 +1,29 @@
+.main-content__form {
+  padding-top: 5vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.form__input label {
+  color: white;
+  font-size: 2em;
+  margin-right: 2em;
+}
+
+.form__input {
+  display: flex;
+  align-items: center;
+}
+
+.form__input input {
+  padding: .5em;
+  width: 30vw;
+}
+
+.form__input text {
+  width: 30vw;
+}
+

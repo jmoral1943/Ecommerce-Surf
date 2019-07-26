@@ -54,23 +54,33 @@
           <div class="products__filters">
             <h2>Filters</h2>
             <div class="checkbox">
-              <input type="checkbox" id="surfboards" name="surfboards" checked>
+              <input type="checkbox" id="surfboards" name="surfboards" onchange="surfboards()">
               <label for="surfboards">Surfboards</label>
             </div>
 
             <div class="checkbox">
-              <input type="checkbox" id="shoes" name="shoes">
+              <input type="checkbox" id="shoes" name="shoes" onchange="shoes()">
               <label for="shoes">Shoes</label>
             </div>
 
             <div class="checkbox">
-              <input type="checkbox" id="shirts" name="shirts">
+              <input type="checkbox" id="shirts" name="shirts" onchange="shirts()">
               <label for="shirts">Shirts</label>
+            </div>
+
+            <div class="checkbox">
+            <input type="checkbox" id="lowPrice" name="lowPrice" onchange="lowPrice()">
+              <label for="lowPrice"> > $100 </label>
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" id="shirts" name="shirts" onchange="shirts()">
+              <label for="shirts"> $100 < </label>
             </div>
           </div>
 
           <div class="products__grid">
-            <div class="item">
+            <div class="item animated bounceInUp">
               <div class="item__card">
                 <img class="item__image" src="./lib/img/productOne.png" alt="Zeus board">
                 <div class="item__price-title">
@@ -82,7 +92,7 @@
               <p class="item__descr">The CI team calls the Zeus “A quick and loose all-around performance shortboard”.</p>
             </div>
 
-            <div class="item">
+            <div class="item animated bounceInUp">
               <div class="item__card">
                 <img class="item__image" src="./lib/img/productTwo.png" alt="Taco Grinder">
                 <div class="item__price-title">
@@ -95,7 +105,7 @@
                 CI team demanding shortboard performance in waves that require a semi-gun or step-up.</p>
             </div>
 
-            <div class="item">
+            <div class="item animated bounceInUp">
               <div class="item__card">
                 <img class="item__image" src="./lib/img/productThree.png" alt="Black and White">
                 <div class="item__price-title">
@@ -108,7 +118,7 @@
                 the Black & White is based on a favorite hand shape Britt Merrick made Dane Reynolds for Santa Barbara area point breaks</p>
             </div>
 
-            <div class="item">
+            <div class="item animated bounceInUp">
               <div class="item__card">
                 <img class="item__image" src="./lib/img/productFour.png" alt="Twin Fin">
                 <div class="item__price-title">
@@ -122,7 +132,7 @@
                 fin that his father Al had shaped for himself in the late 70’s </p>
             </div>
 
-            <div class="item">
+            <div class="item animated bounceInUp">
               <div class="item__card">
                 <img class="item__image" src="./lib/img/productFive.png" alt="High Five">
                 <div class="item__price-title">
@@ -135,7 +145,7 @@
                 quicker and nimbler offspring of the Average Joe, the High 5 will pad your wave count and still allow for rail work and section making</p>
             </div>
 
-            <div class="item">
+            <div class="item animated bounceInUp">
               <div class="item__card">
                 <img class="item__image" src="./lib/img/productSix.png" alt="Bonzer shelter">
                 <div class="item__price-title">
@@ -149,7 +159,7 @@
                   now 30 years on, a design offering is born out of that experience and mutual respect.</p>
             </div>
 
-            <div class="item">
+            <div class="item animated bounceInUp">
               <div class="item__card">
                 <img class="item__image" src="./lib/img/productSeven.jpg" alt="RAIL SLEEVE LS TEE">
                 <div class="item__price-title">
@@ -162,7 +172,7 @@
                 Soft Cotton</p>
             </div>
 
-            <div class="item">
+            <div class="item animated bounceInUp">
               <div class="item__card">
                 <img class="item__image" src="./lib/img/productEight.jpg" alt="STAMPED FLAG PREMIUM TEE">
                 <div class="item__price-title">
@@ -174,7 +184,7 @@
               <p class="item__descr">Clean, classic, comfortable, cool.  The 4 C's of t-shirts. 100% Premium Ultra Soft Washed Cotton</p>
             </div>
 
-            <div class="item">
+            <div class="item animated bounceInUp">
               <div class="item__card">
                 <img class="item__image" src="./lib/img/productNine.jpg" alt="CLEAR HEX TANK">
                 <div class="item__price-title">
@@ -186,7 +196,7 @@
               <p class="item__descr">100% cotton premium slim fit tee</p>
             </div>
 
-            <div class="item">
+            <div class="item animated bounceInUp">
               <div class="item__card">
                 <img class="item__image" src="./lib/img/productTen.png" alt="OLD SKOOL PRO">
                 <div class="item__price-title">
@@ -201,7 +211,7 @@
                 rubber underlays in high wear areas for unrivaled durability.</p>
             </div>
 
-            <div class="item">
+            <div class="item animated bounceInUp">
               <div class="item__card">
                 <img class="item__image" src="./lib/img/productEleven.png" alt="SLIP-ON">
                 <div class="item__price-title">
@@ -215,7 +225,7 @@
                   Vans original Waffle Outsole.</p>
             </div>
 
-            <div class="item">
+            <div class="item animated bounceInUp">
               <div class="item__card">
                 <img class="item__image" src="./lib/img/productTwelve.png" alt="OUTDOORS AUTHENTIC">
                 <div class="item__price-title">
