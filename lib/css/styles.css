@@ -51,6 +51,7 @@ html {
   height: 110vh;
   margin-top: -4vh;
   margin-left: -12vw;
+  display: none;
 }
 .desktop__homescreen {
   display: none;
@@ -64,7 +65,7 @@ html {
   position: absolute;
   top: 50%;
   left: 3%;
-  width: 10vw;
+  width: 5vw;
   cursor: pointer;
 }
 
@@ -72,7 +73,7 @@ html {
   position: absolute;
   top: 50%;
   right: 3%;
-  width: 10vw;
+  width: 5vw;
   cursor: pointer;
 }
 
@@ -93,13 +94,13 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  left: 5vw;
   z-index: 1000;
 }
 
 .mobile__title {
   font-size: 2em;
   color: #f0f3f5;
+  margin-right: 6vw;
 }
 
 .content__hero {
@@ -200,16 +201,21 @@ html {
 }
 .closebtn {
   position: absolute;
-  right: 5vw;
-  top: 4vh;
+  right: -20vw;
+  top: -10vh;
 }
 
 
 .mobile__title--desktop,
 .homescreen__image,
-.desktop__header,
-.tablet__homescreen {
+.desktop__header{
   display: none;
+}
+
+.tablet__homescreen {
+  display: block;
+  width: 100vw;
+  height: 100vh;
 }
 
 .carousel {
@@ -225,55 +231,47 @@ html {
   opacity: 1;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #898d9c;
+  width: 100vw;
+  align-items: center;
+}
 
+.footer__logo {
+  width: 10vw;
+}
 
+.footer__copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
+.fab {
+  font-size: 3em;
+  margin: 0 1em;
+  color: #383e42;
+}
 
+.footer__social-media a:visited {
+  color: #383e42;
+}
 
-
-
-
-
-@media(min-width: 600px){
-  .mobile__homescreen {
-    display: none;
-  }
-  
-  .tablet__homescreen {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .homescreen__leftArrow {
-    position: absolute;
-    top: 50%;
-    left: 3%;
-    width: 50px;
-    cursor: pointer;
-  }
-  
-  .homescreen__rightArrow {
-    position: absolute;
-    top: 50%;
-    right: 3%;
-    width: 50px;
-    cursor: pointer;
-  }
+.tablet__navbar {
+  display: flex;
+  flex-direction: column;
+  height: 50vw;
+  justify-content: space-around;
 }
 
 
-
-
-
-
-
-
-
-
-
-
 @media(min-width: 800px) {
+  .tablet__navbar {
+    display: unset;
+    height: unset;
+  }
 
   .content {
     max-width: 900px;
