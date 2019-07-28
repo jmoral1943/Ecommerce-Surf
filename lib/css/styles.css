@@ -464,8 +464,9 @@ html {
   .heroText__header {
     font-family: 'Playfair Display SC', serif;
     color: white;
-    font-size: 3em;
+    font-size: 4em;
     margin-bottom: 50px;
+    margin-left: -5%;
   }
 
   .heroText__text {
