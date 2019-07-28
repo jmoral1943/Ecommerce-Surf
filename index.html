@@ -4,46 +4,59 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./lib/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://kit.fontawesome.com/4d19c8c06d.js"></script>
+    <link rel="stylesheet" href="./lib/css/hamburgers.css">
     <title>Surf Shop</title>
   </head>
 
   <body>
     <div class="content">
+
       <div class="content__hero">
-    
-        <img class="mobile__homescreen" src="./lib/img/mobile-homescreen.jpeg" alt="Surfers">
-        <img class="tablet__homescreen" src="./lib/img/sufer-car.jpeg" alt="Surfing car">
 
         <div class="carousel-container">
           <img class="desktop__homescreen carousel" src="./lib/img/desktop-homescreen.jpeg" alt="surfing">
           <img class="desktop__homescreen carousel" src="./lib/img/carousel-photoTwo.jpeg" alt="crystal-blue-surfing">
           <img class="desktop__homescreen carousel" src="./lib/img/carousel-photoThree.jpeg" alt="crystal-blue-surfing">          
         </div>
+        
+        <div class="heroText">
+          <h1 class="heroText__header">ADVENTURE INTO THE OCEAN</h1>
+          <p class="heroText__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua.</p>
+        </div>
 
         <img class="homescreen__leftArrow animated bounceInLeft" src="./lib/img/left.png" alt="left-arrow" onclick="">
         <img class="homescreen__rightArrow animated bounceInRight" src="./lib/img/right.png" alt="right-arrow">
-        <h1 class="desktop__header animated bounceInDown">Surf Star</h1>
+
         <div class="homescreen__header">
-            <div id="homescreen__hamburger" class="homescreen__hamburgerIcon animated bounceInDown" onclick="openNav()">
-                &#9776;
+          <div class="header__leftside">
+            <div id="homescreen__hamburger" class="homescreen__hamburgerIcon animated bounceInDown">
+              <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+            <div class="shopping-cart animated bounceInDown">
+              <i class="fas fa-shopping-cart"></i>
             </div>
 
-            <h2 class="mobile__title animated bounceInDown">Surf Star</h2>
-        </div>
+            <nav id="homescreen__navbar" class="homescreen__navbar">
+                <div class="navbar__links animated fadeInDown">
+                    <a href="./index.html" class="homescreen__navbar--mobile">Home</a>
+                    <a href="./product.html" class="homescreen__navbar--mobile">Products</a>
+                    <a href="./contact.html" class="homescreen__navbar--mobile">Contact Us</a>
+                </div>
+            </nav>
+          </div>
 
-        <div id="homescreen__header--mobile" class="homescreen__header--desktop">
-          <nav>
-            <img class="homescreen__image animated bounceInLeft" src="./lib/img/surf-logo.png" alt="logo">
-            <div class="tablet__navbar animated bounceInLeft">
-                <a href="javascript:;" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="./index.html" class="homescreen__navbar--mobile">Home</a>
-                <a href="./product.html" class="homescreen__navbar--mobile">Products</a>
-                <a href="./contact.html" class="homescreen__navbar--mobile">Contact Us</a>
-            </div>
-          </nav>
+          <a class="homescreen__navbarLogo animated bounceInDown" href="./index.html">
+            <img class="homescreen__image animated bounceInDown" src="./lib/img/surf-logo.svg" alt="logo">
+            <p class="homescreen__navbarText">Surf</p>
+          </a>
         </div>
        
       </div>

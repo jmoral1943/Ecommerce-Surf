@@ -68,17 +68,21 @@ html {
 .homescreen__leftArrow {
   position: absolute;
   top: 50%;
-  left: 3%;
-  width: 5vw;
+  left: 0;
+  width: 40px;
+  padding: 10px 5px 10px 0;
   cursor: pointer;
+  background-color:rgba(255,255,255, 0.3);
 }
 
 .homescreen__rightArrow {
   position: absolute;
   top: 50%;
-  right: 3%;
-  width: 5vw;
+  right: 0;
+  width: 40px;
+  padding: 10px 0 10px 5px;
   cursor: pointer;
+  background-color:rgba(255,255,255, 0.3);
 }
 
 .homescreen__hamburgerIcon {
@@ -96,7 +100,6 @@ html {
   background: transparent;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   z-index: 1000;
 }
@@ -182,7 +185,8 @@ html {
   opacity: 0;
   transition: .5s .5s;
   color: white;
-  font-size: 4em;
+  font-size: 1.2em;
+  margin: 0 1em;
 }
 
 .homescreen__header--desktop nav {
@@ -204,9 +208,6 @@ html {
   color: white;
 }
 
-
-.mobile__title--desktop,
-.homescreen__image,
 .desktop__header{
   display: none;
 }
@@ -278,12 +279,108 @@ html {
   font-size: 1.1em;
 }
 
+.homescreen__navbarLogo {
+  background: #4d81d6;
+  position: fixed;
+  top: 0; 
+  right: 5%;
+}
+.homescreen__image {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.homescreen__navbarLogo {
+  background: #4d81d6;
+  position: fixed;
+  top: 0; 
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+}
+
+.homescreen__navbarText {
+  color: black;
+  font-weight: 100;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.homescreen__hamburgerIcon {
+  position: relative;
+  font-size: 45px;
+  cursor: pointer;
+  padding: .3em;
+  background: #4d81d6;
+}
+
+.header__leftside {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
 
 
+.homescreen__hamburgerIcon {
+  position: relative;
+  font-size: 45px;
+  cursor: pointer;
+  padding: .3em;
+  background: #4d81d6;
+}
 
+.header__leftside {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
 
+.fa-shopping-cart {
+  font-size: 20px;
+  color: white;
+}
 
+.shopping-cart {
+  width: 75px;
+  height: 102px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+}
+.homescreen__navbar {
+  width: 0;
 
+}
+.navbar__links {
+  display: flex;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.homescreen__navbar--mobile {
+  opacity: 0;
+  transition: unset;
+  transition: .4s;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin: 1em;
+}
+.hamburger:focus {
+  color: none;
+}
+.homescreen__image {
+  margin-top: 20px;
+  width: 4vw;
+  max-width: 90px;
+}
 
 
 
@@ -304,6 +401,30 @@ html {
 
 
 @media(min-width: 800px) {
+  .homescreen__image {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .homescreen__navbarLogo {
+    background: #4d81d6;
+    position: fixed;
+    top: 0; 
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  .homescreen__navbarText {
+    color: black;
+    font-weight: 100;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+
   .desktop__article--text {
     color: white;
     font-size: 1.5em;
@@ -331,7 +452,27 @@ html {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    filter: brightness(90%);
+    filter: brightness(80%);
+  }
+
+  .heroText {
+    top: 30%;
+    left: 8%;
+    position: absolute;
+  }
+
+  .heroText__header {
+    font-family: 'Playfair Display SC', serif;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 50px;
+  }
+
+  .heroText__text {
+    color: white;
+    font-size: 2em;
+    width: 50vw;
+    max-width: 800px;
   }
 
   .homescreen__header--desktop {
@@ -339,29 +480,59 @@ html {
     justify-content: space-evenly;
     z-index: 100;
   }
-  .homescreen__header {
-    display: none;
+
+  .homescreen__hamburgerIcon {
+    position: relative;
+    font-size: 45px;
+    cursor: pointer;
+    padding: .3em;
+    background: #4d81d6;
+  }
+
+  .header__leftside {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .fa-shopping-cart {
+    font-size: 20px;
+    color: white;
+  }
+
+  .shopping-cart {
+    width: 75px;
+    height: 102px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+  }
+  .homescreen__navbar {
+    width: 0;
+
+  }
+  .navbar__links {
+    display: flex;
+  }
+
+  .hamburger:focus {
+    outline: none;
   }
 
   .homescreen__navbar--mobile {
-    opacity: unset;
+    opacity: 0;
     transition: unset;
+    transition: .4s;
     color: white;
-    
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 1em;
   }
-
-  .homescreen__header--desktop nav {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    height: 10vh;
-    width: 100vw;
-    align-items: center;
+  .hamburger:focus {
+    color: none;
   }
-
   .homescreen__navbar--mobile:hover {
     color: #9cb7d6;
   }
@@ -369,10 +540,9 @@ html {
   .homescreen__header--desktop a {
     text-decoration: none;
     font-size: 2em;
-    margin: 1em;
+    margin: 0;
   }
   .closebtn,
-  .homescreen__hamburgerIcon,
   .mobile__title {
     display: none;
   }
@@ -381,12 +551,10 @@ html {
     display: flex;
   }
 
-  .homescreen__header--desktop img {
-    margin-top: 5vh;
-    width: 8vw;
-  }
   .homescreen__image {
-    display: unset;
+    margin-top: 20px;
+    width: 4vw;
+    max-width: 90px;
   }
 
   .main-content a {

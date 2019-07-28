@@ -8,21 +8,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://kit.fontawesome.com/4d19c8c06d.js"></script>
     <link rel="stylesheet" href="./lib/css/contact.css">
+    <link rel="stylesheet" href="./lib/css/hamburgers.css">
     <title>Surf Shop</title>
   </head>
 
   <body>
     <div class="content">
-      <div id="homescreen__header--mobile" class="homescreen__header--desktop">
-        <nav>
-          <img class="homescreen__image animated bounceInLeft" src="./lib/img/surf-logo.png" alt="logo">
-          <div class="animated bounceInLeft">
-              <a href="javascript:;" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="./index.html" class="homescreen__navbar--mobile">Home</a>
-              <a href="./product.html" class="homescreen__navbar--mobile">Products</a>
-              <a href="./contact.html" class="homescreen__navbar--mobile">Contact Us</a>
+
+      <div class="homescreen__header">
+        <div class="header__leftside">
+          
+          <div id="homescreen__hamburger" class="homescreen__hamburgerIcon animated bounceInDown">
+            <button class="hamburger hamburger--spin" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
           </div>
-        </nav>
+
+          <div class="shopping-cart animated bounceInDown">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+
+          <nav id="homescreen__navbar" class="homescreen__navbar">
+              <div class="navbar__links animated fadeInDown">
+                  <a href="./index.html" class="homescreen__navbar--mobile">Home</a>
+                  <a href="./product.html" class="homescreen__navbar--mobile">Products</a>
+                  <a href="./contact.html" class="homescreen__navbar--mobile">Contact Us</a>
+              </div>
+          </nav>
+
+        </div>
+        
+        <a class="homescreen__navbarLogo animated bounceInDown" href="./index.html">
+          <img class="homescreen__image animated bounceInDown" src="./lib/img/surf-logo.svg" alt="logo">
+          <p class="homescreen__navbarText">Surf</p>
+        </a>
       </div>
 
       <main class="main-content">
