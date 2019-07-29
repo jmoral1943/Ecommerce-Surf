@@ -5,6 +5,7 @@
 
 .products {
   display: flex;
+  flex-direction: column;
   width: 100vw;
   padding-bottom: 4em;
   padding-top: 2em;
@@ -12,8 +13,8 @@
 
 .products__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 1fr);
   grid-column-gap: 10%;
   padding-right: 2em;
 }
@@ -89,6 +90,7 @@
 @media(min-width: 800px) {
   .products {
     display: flex;
+    flex-direction: row;
     width: 100vw;
     padding-bottom: 4em;
     padding-top: 2em;
