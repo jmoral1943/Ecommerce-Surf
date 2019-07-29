@@ -363,7 +363,7 @@ body {
   margin: 1em;
 }
 .hamburger:focus {
-  color: none;
+  color: transparent;
 }
 .homescreen__image {
   margin-top: 20px;
@@ -624,7 +624,7 @@ body {
     margin: 1em;
   }
   .hamburger:focus {
-    color: none;
+    color: transparent;
   }
   .homescreen__navbar--mobile:hover {
     color: #9cb7d6;
