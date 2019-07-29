@@ -15,39 +15,54 @@
   <body>
     <div class="content">
 
-      <div class="homescreen__header">
-        <div class="header__leftside">
-          
-          <div id="homescreen__hamburger" class="homescreen__hamburgerIcon animated bounceInDown">
-            <button class="hamburger hamburger--spin" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-          </div>
+      <div class="content__hero">
 
-          <div class="shopping-cart animated bounceInDown">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
+       <div class="contact__headerHomeScreen">
 
-          <nav id="homescreen__navbar" class="homescreen__navbar">
-              <div class="navbar__links animated fadeInDown">
-                  <a href="./index.html" class="homescreen__navbar--mobile">Home</a>
-                  <a href="./product.html" class="homescreen__navbar--mobile">Products</a>
-                  <a href="./contact.html" class="homescreen__navbar--mobile">Contact Us</a>
+       </div>
+        
+        <div class="heroText">
+          <h1 class="heroText__header--mobile">CONTACT US NOW </h1>
+          <p class="heroText__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="homescreen__header">
+          <div class="header__leftside">
+
+            <div class="header__hamburger-shoppingCart">
+              <div id="homescreen__hamburger" class="homescreen__hamburgerIcon animated bounceInDown">
+                <button class="hamburger hamburger--spin" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
               </div>
-          </nav>
+              <div class="shopping-cart animated bounceInDown">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+            </div>
 
+            <nav id="homescreen__navbar" class="homescreen__navbar">
+              <div class="navbar__links animated fadeInDown">
+                <a href="./index.html" class="homescreen__navbar--mobile">Home</a>
+                <a href="./product.html" class="homescreen__navbar--mobile">Products</a>
+                <a href="./contact.html" class="homescreen__navbar--mobile">Contact Us</a>
+              </div>
+            </nav>
+          </div>
+
+          <a class="homescreen__navbarLogo animated bounceInDown" href="./index.html">
+            <img class="homescreen__image animated bounceInDown" src="./lib/img/surf-logo.svg" alt="logo">
+            <p class="homescreen__navbarText">Surf</p>
+          </a>
         </div>
         
-        <a class="homescreen__navbarLogo animated bounceInDown" href="./index.html">
-          <img class="homescreen__image animated bounceInDown" src="./lib/img/surf-logo.svg" alt="logo">
-          <p class="homescreen__navbarText">Surf</p>
-        </a>
       </div>
+    
 
       <main class="main-content">
-        <form class="main-content__form">
+        <form name="contact-us" class="main-content__form" onsubmit="validateForm()">
           <div class="form__input animated bounceInLeft">
             <label for="firstName">First Name: </label>
             <input type="text" id="firstName" name="firstName" required>
@@ -70,17 +85,17 @@
           
           <div class="form__input animated bounceInLeft">
             <label>Comments: </label>
-            <textarea rows="4" cols="70" required>
+            <textarea class="form__textarea" rows="4" cols="40" >
             </textarea>
           </div>
 
-          <button class="animated bounceInLeft" type="submit">Submit</button>
+          <button class="submit-btn animated bounceInLeft" type="submit">Submit</button>
         </form>
       </main>
       <footer class="footer">
         <div class="footer__copyright">
           <img class="footer__logo animated bounceInLeft" src="./lib/img/surf-logo.png" alt="logo">
-          <p>	&copy; 2019 Jonathan Morales</p>
+          <p class="footer__text">	&copy; 2019 Jonathan Morales</p>
         </div>
          
         <div class="footer__social-media">

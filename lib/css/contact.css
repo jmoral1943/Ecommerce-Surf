@@ -4,26 +4,85 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .form__input label {
   color: white;
   font-size: 2em;
-  margin-right: 2em;
+  margin: 20px 0;
 }
 
 .form__input {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .form__input input {
   padding: .5em;
-  width: 30vw;
+  width: 90vw;
 }
 
 .form__input text {
-  width: 30vw;
+  width: 20vw;
 }
 
+.contact__headerHomeScreen {
+  background: url("../img/contact-homescreen.jpeg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  filter: brightness(80%);
+}
+
+.heroText__header--mobile {
+  font-family: 'Playfair Display SC', serif;
+  color: white;
+  font-size: 3em;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-left: 8%;
+}
+
+.submit-btn {
+  background-color: #4d81d6;
+  border: none;
+  font-size: 2em;
+  font-weight: 200;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+@media(min-width: 800px) {
+  .main-content__form {
+    padding-top: 5vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+  }
+  
+  .form__input label {
+    color: white;
+    font-size: 2em;
+    margin-right: 2em;
+  }
+  
+  .form__input {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .form__input input {
+    padding: .5em;
+    width: 20vw;
+  }
+
+  .form__textarea {
+    width: 50em;
+  }
+}
