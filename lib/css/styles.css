@@ -47,18 +47,22 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .mobile__homescreen {
   height: 110vh;
   margin-top: -4vh;
   margin-left: -12vw;
   display: none;
 }
-.desktop__homescreen {
+.desktop__homescreen--mobile {
   display: unset;
   position: absolute;
   width: 100vw;
   height: 100vh;
-  filter: brightness(90%);
+  filter: brightness(70%);
 }
 
 .tablet__homescreen {
@@ -125,13 +129,13 @@ html {
 }
 
 .main-content__cards img {
-  height: 30vh;
+  width: 100vw;
   filter: brightness(80%);
 }
 
 .main-content__cards {
-  width: 30vw;
-  height: 30vh;
+  width: 100vw;
+  height: 40vh;
   overflow: hidden;
   position: relative;
 }
@@ -141,18 +145,22 @@ html {
 
 .desktop__cards {
   display: flex;
-  width: 95vw;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 2em;
 }
 
 .desktop__article {
   margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .desktop__article--image {
-  width: 40vw;
-  margin-right: 2em;
+  width: 100vw;
+  margin-bottom: 50px;
 }
 
 .cards__button {
@@ -223,16 +231,19 @@ html {
   transition: .5s;
   width: 100vw;
 }
+
 .carousel-container {
   position: relative;
 }
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   background-color: #898d9c;
   width: 100vw;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .footer__logo {
@@ -249,6 +260,10 @@ html {
   font-size: 3em;
   margin: 0 1em;
   color: #383e42;
+}
+
+.footer__social-media {
+  display: flex;
 }
 
 .footer__social-media a:visited {
@@ -270,13 +285,10 @@ html {
   align-items: center;
 }
 
-.main-content {
-  overflow: hidden;
-}
-
 .desktop__article--text {
   color: white;
   font-size: 1.1em;
+  width: 80vw;
 }
 
 .homescreen__navbarLogo {
@@ -289,6 +301,7 @@ html {
   margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  width: 50px;
 }
 
 .homescreen__navbarLogo {
@@ -297,7 +310,7 @@ html {
   top: 0; 
   right: 5%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-decoration: none;
   align-items: center;
 }
@@ -320,7 +333,9 @@ html {
 .header__leftside {
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 0;
+  height: 100vh;
+  transition: .5s;
 }
 
 
@@ -330,12 +345,6 @@ html {
   cursor: pointer;
   padding: .3em;
   background: #4d81d6;
-}
-
-.header__leftside {
-  display: flex;
-  align-items: center;
-  width: 100vw;
 }
 
 .fa-shopping-cart {
@@ -382,6 +391,59 @@ html {
   max-width: 90px;
 }
 
+.desktop__homescreen {
+  display: none;
+}
+
+.heroText {
+  position: absolute;
+  top: 30%;
+}
+
+.heroText__header {
+  font-family: 'Playfair Display SC', serif;
+  color: white;
+  font-size: 2em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.heroText__text {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -401,6 +463,20 @@ html {
 
 
 @media(min-width: 800px) {
+  .desktop__cards {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+  }
+
+  .carousel-container--mobile,
+  .desktop__homescreen--mobile {
+    display: none;
+  }
+
+  .desktop__homescreen {
+    display: unset;
+  }
   .homescreen__image {
     margin-bottom: 10px;
     padding-left: 10px;
@@ -439,10 +515,6 @@ html {
     max-width: 900px;
   }
 
-  .tablet__homescreen {
-    display: none;
-  }
-
   .main-content {
     height: unset;
   }
@@ -467,13 +539,15 @@ html {
     font-size: 4em;
     margin-bottom: 50px;
     margin-left: -5%;
+    text-align: unset;
   }
 
   .heroText__text {
     color: white;
     font-size: 2em;
     width: 50vw;
-    max-width: 800px;
+    max-width: 200px;
+    display: unset;
   }
 
   .homescreen__header--desktop {
@@ -494,6 +568,7 @@ html {
     display: flex;
     align-items: center;
     width: 100vw;
+    height: unset;
   }
 
   .fa-shopping-cart {
@@ -563,12 +638,16 @@ html {
   }
 
   .main-content__cards img {
-    height: 40vh;
+    height: 60vh;
     filter: brightness(80%);
   }
+
+  /* .cards__images--left {
+    width: 
+  } */
   
   .main-content__cards {
-    width: 40vw;
+    width: 30vw;
     height: 40vh;
     overflow: hidden;
     position: relative;
