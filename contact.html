@@ -63,25 +63,25 @@
     
 
       <main class="main-content">
-        <form name="contact-us" class="main-content__form" onsubmit="validateForm()">
+        <form name="contact-us" class="main-content__form" onsubmit="return submitForm()">
           <div class="form__input animated bounceInLeft">
             <label for="firstName">First Name: </label>
-            <input type="text" id="firstName" name="firstName" required>
+            <input type="text" id="firstName" name="firstName" >
           </div>
           
           <div class="form__input animated bounceInLeft">
             <label for="lastName">Last Name: </label>
-            <input type="text" id="lastName" name="lastName" required>
+            <input type="text" id="lastName" name="lastName">
           </div>
           
           <div class="form__input animated bounceInLeft">
             <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email">
           </div>
           
           <div class="form__input animated bounceInLeft">
             <label for="item">Item to purchase: </label>
-            <input type="text" id="item" name="item" required>
+            <input type="text" id="item" name="item">
           </div>
           
           <div class="form__input animated bounceInLeft">
@@ -109,5 +109,6 @@
     </div>
 
     <script src="./lib/js/index.js"></script>
+    <script src="./lib/js/contact.js"></script>
   </body>
 </html>
